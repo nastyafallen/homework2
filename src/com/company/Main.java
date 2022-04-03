@@ -37,6 +37,31 @@ public class Main {
         int weightLossSlow = weightLossNeeded / 250;
         int weightLossFast = weightLossNeeded / 500;
         int weightLossAverage = (weightLossSlow + weightLossFast) / 2;
+        int a = (int) (7 / 0.25);
+        int b = (int) (7 / 0.5);
+        int c = (a + b) / 2;
+        System.out.println("Ели спортсмен будет терять по 250 г в день, то потребуется " + weightLossSlow + " дней");
+        System.out.println("Если спортсмен будет терять по 500 г в день, то потребуется " + weightLossFast + " дней");
+        System.out.println("В среднем спортсмену потребуется" + weightLossAverage + " дней");
+        System.out.println("Остаток " + c);
+
+        // Задание 5
+        int zpMasha = 67_760;
+        int zpDenis = 83_690;
+        int zpKristina = 76_230;
+        double zpMashaNew = zpMasha + zpMasha * 0.1;
+        double zpDenisNew = zpDenis + zpDenis * 0.1;
+        double zpKristinaNew = zpKristina + zpKristina * 0.1;
+        System.out.println("Зарплата Маши после повышения составит " + zpMashaNew + " рублей в месяц");
+        System.out.println("Зарплата Дениса после повышения составит " + zpDenisNew + " рублей в месяц");
+        System.out.println("Зарплата Кристины после повышения составит " + zpKristinaNew + " рублей в месяц");
+        double zpMashaDifference = zpMashaNew * 12 - zpMasha * 12;
+        double zpDenisDifference = zpDenisNew * 12 - zpDenis * 12;
+        double zpKristinaDifference = zpKristinaNew * 12 - zpKristina * 12;
+        System.out.println("Годовой доход Маши вырос на " + zpMashaDifference + " рублей");
+        System.out.println("Годовой доход Дениса вырос на " + zpDenisDifference + " рублей");
+        System.out.println("Годовой доход Кристины вырос на " + zpKristinaDifference + " рублей");
+
 
     }
 }
